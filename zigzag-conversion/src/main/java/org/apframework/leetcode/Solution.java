@@ -38,14 +38,16 @@ public class Solution {
                 point += 1;
             }
         }
-        StringBuilder builder = new StringBuilder();
+        // StringBuilder builder = new StringBuilder();
+        char[] rs = new char[s.length()];
+        int iterator = 0;
         for (int i = 0; i < numRows; i++) {
             for (int j = 0; j < length; j++) {
                 if (v[j][i] != 0) {
-                    builder.append(v[j][i]);
+                    rs[iterator++] = v[j][i];
                 }
             }
         }
-        return builder.toString();
+        return new String(rs);
     }
 }
