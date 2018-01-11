@@ -1,4 +1,4 @@
-package org.apframework.leetcode;
+package zigzag_conversion;
 
 public class Solution {
 
